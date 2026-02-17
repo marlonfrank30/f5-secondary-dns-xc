@@ -17,7 +17,7 @@ This repository provides an **enterprise-grade deployment pattern** for
 implementing:
 
 ✅ Primary authoritative DNS using F5 BIGIP DNS\
-✅ Secondary authoritative DNS using F5 XC DNS\
+✅ Secondary DNS zone using F5 XC DNS\
 ✅ Hidden primary architecture\
 ✅ Intelligent DNS traffic steering\
 ✅ High availability and resilient DNS infrastructure
