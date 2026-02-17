@@ -136,7 +136,7 @@ key "<key_name>" {
 ```
 zone "madebeen.com." {
         type master;
-        file "db.external.madebeen.";
+        file "db.external.madebeen.com";
         allow-update {
             localhost;
         };
