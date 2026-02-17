@@ -1,8 +1,7 @@
 
 # 🌐 Enterprise Secondary DNS Architecture
 
-## F5 BIG-IP DNS (GTM) --- Principal Engineer Reference Design
-
+## F5 BIG-IP DNS (GTM)
 
 ![F5](https://img.shields.io/badge/F5-BIG--IP-red)
 ![Architecture](https://img.shields.io/badge/Architecture-Enterprise-blue)
