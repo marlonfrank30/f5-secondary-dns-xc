@@ -1,34 +1,14 @@
-```{=html}
-<!-- ========================================================= -->
-```
-```{=html}
-<!--               F5 BIG-IP DNS ELITE README                  -->
-```
-```{=html}
-<!-- ========================================================= -->
-```
-```{=html}
-<p align="center">
-```
+
 # 🌐 Enterprise Secondary DNS Architecture
 
 ## F5 BIG-IP DNS (GTM) --- Principal Engineer Reference Design
 
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
+
 ![F5](https://img.shields.io/badge/F5-BIG--IP-red)
 ![Architecture](https://img.shields.io/badge/Architecture-Enterprise-blue)
 ![DNS](https://img.shields.io/badge/DNS-Secondary%20Authoritative-green)
 ![Status](https://img.shields.io/badge/Status-Reference%20Design-success)
 ![IaC](https://img.shields.io/badge/IaC-Ready-purple)
-
-```{=html}
-</p>
-```
 
 ------------------------------------------------------------------------
 
