@@ -239,6 +239,7 @@ Use at your own risk and validate in a test environment prior to production depl
 ## 🧾 References & Resources
 ```
 https://my.f5.com/manage/s/article/K000147071
+https://my.f5.com/manage/s/article/K000147843
 
 ```
 
