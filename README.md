@@ -98,11 +98,59 @@ This hierarchy enables:
 ## 1️⃣ Prepare Primary DNS
 
 Enable zone transfer:
-
+1. Adjust named.conf file to Allow Transfer as follows:
+```
     allow-transfer {
         <bigip_dns_ip>;
+        localhost;
+        F5-Cloud;
     };
+```
+2. The <F5-Cloud> is an ACL for the following IP addresses:
+```
+acl "F5-Cloud" {
+     52.14.213.208/32;
+     3.140.118.214/32;
+};
+```
+3. If there is a zone label < . > - this should be removed:
+```
+zone "." {
+     type master;
+     file "db.external.example.com";
+     allow-update {
+     127.0.0.1;
+     localhost;
+};
+```
+4. Verify the file named tsig.key in the /var/named/config directory exists, and the configuration syntax is correct:
+```
+key "<key_name>" {
+     algorithm <hash_alg>;
+     secret "<secret>";
+};
+```
 
+5. Include <key_name>, and remember to use the same name as it is case sensitive: 
+```
+zone "example.com." {
+        type master;
+        file "db.external.example.";
+        allow-update {
+            localhost;
+        };
+        allow-transfer {
+            key <key_name>;
+            localhost;
+        };
+    };
+```
+
+6. Make sure that the zone transfer works correctly, by performing a local AXFR from the BIG-IP, with the below command:
+```
+dig +norecurse AXFR @localhost <zone-name> -y <tsig-algorithm>:tsig-key:<secret>
+```    
+   
 Recommended:
 
 -   ACL restrictions
@@ -119,7 +167,7 @@ Navigate:
 
 Parameters:
 
--   Zone Type: Secondary
+-   Zone Type: Primary
 -   Primary server IP
 -   Enable NOTIFY if available
 
