@@ -62,7 +62,7 @@ Benefits:
                                  |
               +-----------------------------------------+
               |              BIG-IP DNS                |
-              |   Secondary Authoritative + GTM Logic |
+              |   Primary Authoritative + GTM Logic |
               +------------------+--------------------+
                                  |
                            AXFR / IXFR
@@ -251,9 +251,9 @@ Recommended practices:
 
 # 🧪 Validation Commands
 
-    dig AXFR @localhost madebeen..com
-    dig @<bigip_ip> www.madebeen..com
-    dig SOA madebeen..com
+    dig AXFR @localhost madebeen.com
+    dig @<bigip_ip> www.madebeen.com
+    dig SOA madebeen.com
 
 ------------------------------------------------------------------------
 
