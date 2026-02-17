@@ -118,7 +118,7 @@ acl "F5-Cloud" {
 ```
 zone "." {
      type master;
-     file "db.external.example.com";
+     file "db.external.madebeen.com";
      allow-update {
      127.0.0.1;
      localhost;
@@ -134,9 +134,9 @@ key "<key_name>" {
 
 5. Include <key_name>, and remember to use the same name as it is case sensitive: 
 ```
-zone "example.com." {
+zone "madebeen.com." {
         type master;
-        file "db.external.example.";
+        file "db.external.madebeen.";
         allow-update {
             localhost;
         };
