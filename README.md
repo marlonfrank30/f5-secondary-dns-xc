@@ -224,8 +224,7 @@ Recommended practices:
 
 -   The following screenshot on your XC tenant confirms that synchornization is occurring sucessfully between F5's BIGIP GTM and XC DNS. 
 
-![F5 XC DNS ](./f5-secondary-dns-xc/images/xc_dns.png)
-
+![F5 XC DNS ](./images/xc_dns.png)
 
 ------------------------------------------------------------------------
 
