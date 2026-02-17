@@ -270,7 +270,7 @@ Recommended practices:
 # 📈 Validating Secondary DNS (Distributed Cloud XC)
 
 -   The following screenshot on your XC tenant confirms that synchornization is occurring sucessfully between F5's BIGIP GTM and XC DNS. 
-
+![F5 XC DNS ](./images/bigip_dns.png)
 ![F5 XC DNS ](./images/xc_dns.png)
 
 ------------------------------------------------------------------------
