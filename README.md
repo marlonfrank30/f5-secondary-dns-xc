@@ -1,7 +1,7 @@
 
-# 🌐 Enterprise Secondary DNS Architecture
+# 🌐 Enterprise Secondary XC DNS Architecture
 
-## F5 BIG-IP DNS (GTM)
+## F5 BIG-IP DNS Primary (GTM)
 
 ![F5](https://img.shields.io/badge/F5-BIG--IP-red)
 ![Architecture](https://img.shields.io/badge/Architecture-Enterprise-blue)
