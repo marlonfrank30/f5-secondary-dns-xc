@@ -197,7 +197,7 @@ Design principles:
 
 # 🔐 Secure Zone Transfers (TSIG)
 
-    key "dns-transfer-key" {
+    key "bigip-dns" {
         algorithm hmac-sha256;
         secret "SECRET";
     };
