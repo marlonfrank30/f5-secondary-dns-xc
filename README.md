@@ -145,8 +145,19 @@ zone "madebeen.com." {
             localhost;
         };
     };
-```
 
+ltm dns zone madebeen.com {
+    app-service none
+    description none
+    dns-express-allow-notify { 107.162.234.197 107.162.176.221 }
+    dns-express-enabled yes
+    dns-express-notify-action consume
+    dns-express-notify-tsig-verify yes
+    dns-express-server localhost
+    partition Common
+    response-policy no
+    server-tsig-key bigip-dns
+```    
 6. Make sure that the zone transfer works correctly, by performing a local AXFR from the BIG-IP, with the below command:
 ```
 dig +norecurse AXFR @localhost <zone-name> -y <tsig-algorithm>:tsig-key:<secret>
